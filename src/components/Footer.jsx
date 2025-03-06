@@ -36,7 +36,7 @@ const Footer = () => {
 
         <hr />
 
-        <p>SB FITZZ - &copy; 2023 - All Rights Reserved</p>
+        <p>BOYZ FITZZ - &copy; 2025 - All Rights Reserved</p>
 
     </div>
   )

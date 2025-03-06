@@ -1,9 +1,9 @@
-.Footer{
+.Footer {
 
     background-color: rgb(42, 42, 42);
 }
 
-.footer-body{
+.footer-body {
 
     display: flex;
     justify-content: space-between;
@@ -12,12 +12,14 @@
 
 }
 
-.footer-body ul{
-
-
+.footer-body ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px
 }
 
-.footer-body ul li{
+.footer-body ul li {
     list-style: none;
     color: rgb(220, 220, 220);
     cursor: pointer;
@@ -25,17 +27,17 @@
     text-align: center;
 }
 
-.footer-body ul li:hover{
+.footer-body ul li:hover {
     color: tomato;
-    
+
 }
 
-.Footer hr{
+.Footer hr {
 
     width: 95%;
 }
 
-.Footer p{
+.Footer p {
     margin: 0;
     text-align: center;
     padding-bottom: 3vh;

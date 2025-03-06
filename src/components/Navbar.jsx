@@ -28,7 +28,7 @@ const Navbar = () => {
           : `navbar`
       }
     >
-      <h3 onClick={() => navigate("/")}>SB Fitzz</h3>
+      <h3 onClick={() => navigate("/")}>Boyz Fitzz</h3>
 
       {url === "http://localhost:3000/" ||
       url === "http://localhost:3000/#about" ||

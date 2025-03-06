@@ -17,36 +17,13 @@ const Exercise = () => {
           fetchData(id)
       }
   },[])
-
-  const fetchData = async (id) => {
-      const options = {
-        method: 'GET',
-        url: `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`,
-        headers: {
-          'X-RapidAPI-Key': 'a2768962a5mshb93d4a8490ab35bp13db99jsn4733564460bf',
-          'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-      }
-    };
-
-      try {
-          const response = await axios.request(options);
-          console.log(response.data);
-          setExercise(response.data);
-
-          fetchRelatedVideos(response.data.name)
-      } catch (error) {
-          console.error(error);
-      }
-
-  }
-
   const fetchRelatedVideos = async (name)=>{
     console.log(name)
     const options = {
       method: 'GET',
       url: 'https://youtube-search-and-download.p.rapidapi.com/search',
       params: {
-        query: `${name}`,
+        query: `${name} exercise`,
         hl: 'en',
         upload_date: 't',
         duration: 'l',
@@ -54,7 +31,7 @@ const Exercise = () => {
         sort: 'r'
       },
       headers: {
-        'X-RapidAPI-Key': 'a2768962a5mshb93d4a8490ab35bp13db99jsn4733564460bf',
+        'X-RapidAPI-Key': '25ad3f03femshb8fd492eb757db3p12c3dejsn1fec7c94060d',
         'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
       }
     };
@@ -67,6 +44,29 @@ const Exercise = () => {
       console.error(error);
     }
   }
+  const fetchData = async (id) => {
+      const options = {
+        method: 'GET',
+        url: `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`,
+        headers: {
+          'X-RapidAPI-Key': '25ad3f03femshb8fd492eb757db3p12c3dejsn1fec7c94060d',
+          'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+      }
+    };
+
+      try {
+          const response = await axios.request(options);
+          console.log(response.data);
+          setExercise(response.data);
+
+          fetchRelatedVideos(response.data.secondaryMuscles[0])
+      } catch (error) {
+          console.error(error);
+      }
+
+  }
+
+ 
 
 
   return (

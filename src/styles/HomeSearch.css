@@ -1,4 +1,4 @@
-.home-search-component{
+.home-search-component {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     background-color: #f9f0f03f;
 }
 
-.home-search-component h3{
+.home-search-component h3 {
 
     text-align: center;
     font-size: 1.8rem;
@@ -16,7 +16,7 @@
     margin: 0;
 }
 
-.search-type-buttons{
+.search-type-buttons {
 
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
     margin-bottom: 4vh;
 }
 
-.search-type-buttons h4{
+.search-type-buttons h4 {
 
     font-size: 1.2rem;
     color: #4d6479de;
@@ -34,17 +34,17 @@
     margin: 0;
 }
 
-.search-type-buttons span{
-    
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        border: 1.5px solid #adadadb2;
-        border-radius: 2rem;
-        padding: 2px 2px;
+.search-type-buttons span {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1.5px solid #adadadb2;
+    border-radius: 2rem;
+    padding: 2px 2px;
 }
 
-.search-type-buttons button{
+.search-type-buttons button {
     height: 6vh;
     border-radius: 2rem;
     border: none;
@@ -52,20 +52,18 @@
     cursor: pointer;
 }
 
-.search-type-buttons button:hover{
+.search-type-buttons button:hover {}
 
+.search-type-buttons .active {
+
+    background-color: #2b2a2a;
+    color: aliceblue;
+    border: none;
+    border-radius: 2rem;
+    padding: 2px 15px;
 }
 
-.search-type-buttons .active{
-    
-        background-color: #2b2a2a;
-        color: aliceblue;
-        border: none;
-        border-radius: 2rem;
-        padding: 2px 15px;
-}   
-
-.search-body{
+.search-body {
 
     width: 70%;
     margin-left: 15%;
@@ -77,25 +75,28 @@
     border-radius: 0.5rem;
 }
 
-.search-body select{
+.search-body select {
     width: 80%;
     height: 9vh;
     border: none;
     font-size: 1.1rem;
 }
-.search-body select::placeholder{
+
+.search-body select::placeholder {
     font-size: 1.1rem;
 }
-.search-body select:focus{
+
+.search-body select:focus {
     outline: none;
 }
-.search-body button{
+
+.search-body button {
     width: 20%;
     height: 9vh;
     border-radius: 0.5rem;
     border: none;
-    background: rgb(255,0,164);
-    background: linear-gradient(126deg, rgb(255, 0, 60) 0%, rgba(255,103,22,1) 53%, rgba(255,134,65,1) 100%);
+    background: rgb(255, 0, 164);
+    background: linear-gradient(126deg, rgb(255, 0, 60) 0%, rgba(255, 103, 22, 1) 53%, rgba(255, 134, 65, 1) 100%);
     background-size: 200% 100%;
     background-position: 100% 0;
     transition: background-position .5s;
@@ -105,49 +106,55 @@
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
+
 .search-body button:hover {
     background-position: 0 0;
 }
 
 
-.popular-categories-container{
+.popular-categories-container {
     width: 60%;
     margin-left: 20%;
-    
+
 }
 
-.popular-categories-container span{
+.popular-categories-container span {
 
     display: flex;
     align-items: center;
     margin-top: 5vh;
     gap: 5px;
-    margin-bottom: 2vh;
+    margin-bottom: 2rem;
     justify-content: center;
 }
 
-.popular-categories-container span h5{
+.popular-categories-container span h5 {
 
     margin: 0;
     font-size: 1.2rem;
     color: tomato;
+    margin-bottom: 1rem;
 }
 
-.popular-categories-container span .fire-icon{
+.popular-categories-container span .fire-icon {
 
     color: tomato;
 }
 
-.popular-categories{
-
-    display: flex;
+.popular-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     justify-content: center;
     gap: 3vw;
 }
 
-.popular-category{
-
+.popular-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width: 200px;
     cursor: pointer;
     padding: 5px;
     border-radius: 0.5rem;
@@ -156,20 +163,20 @@
 }
 
 
-.popular-category:hover{
+.popular-category:hover {
 
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
 }
 
-.popular-category img{
+.popular-category img {
 
-    width: 8vw;
-    height: 8vw;
+    width: 100%;
+    height: 75%;
     border-radius: 0.5rem;
 }
 
-.popular-category p{
+.popular-category p {
 
     text-align: center;
     margin: 0;

@@ -28,7 +28,7 @@ const HomeSearch = () => {
     method: "GET",
     url: "https://exercisedb.p.rapidapi.com/exercises/bodyPartList?limit=10&offset=0",
     headers: {
-      "X-RapidAPI-Key": "a2768962a5mshb93d4a8490ab35bp13db99jsn4733564460bf",
+      "X-RapidAPI-Key": "25ad3f03femshb8fd492eb757db3p12c3dejsn1fec7c94060d",
       "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
     },
   };
@@ -37,7 +37,7 @@ const HomeSearch = () => {
     method: "GET",
     url: "https://exercisedb.p.rapidapi.com/exercises/equipmentList",
     headers: {
-      "X-RapidAPI-Key": "a2768962a5mshb93d4a8490ab35bp13db99jsn4733564460bf",
+      "X-RapidAPI-Key": "25ad3f03femshb8fd492eb757db3p12c3dejsn1fec7c94060d",
       "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
     },
   };
@@ -104,8 +104,8 @@ const HomeSearch = () => {
       </div>
       <div className="popular-categories-container">
         <span>
-          <h5>Popular Categories</h5>
-          <FaFireAlt className="fire-icon" />
+          <h5>Popular Categories <FaFireAlt className="fire-icon" /> </h5>
+          {/* <FaFireAlt className="fire-icon" /> */}
         </span>
         <div className="popular-categories">
           <div
