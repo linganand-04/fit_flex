@@ -4,10 +4,11 @@ import '../styles/Hero.css'
 const Hero = () => {
   return (
     <div className='hero-container' id='hero'>
-      <video loop muted autoPlay> 
+      {<video loop muted autoPlay> 
         {/* <source src="https://videos.pexels.com/video-files/6388436/6388436-sd_640_360_25fps.mp4" type="video/mp4" /> */}
         <source src="../src/assets/bg_vid.mp4" type="video/mp4" />
-        </video>
+        </video> }.
+
       
       <div className="hero-text">
         <span>
